@@ -123,7 +123,12 @@ main {
   font-weight: 500;
 }
 
-@media screen and (min-width: 1164px) {
+.attribution {
+  display: none;
+}
+
+
+@media screen and (min-width: 1100px) {
   .welcome {
     text-align: start;
     display: flex;
@@ -154,7 +159,8 @@ main {
   .review-cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
+    /* gap: 32px; */
+    justify-content: space-between;
   }
   .review-card {
     flex-basis: 350px;
@@ -168,10 +174,9 @@ main {
     top: 20px;
   }
 
-
-}
-
-
-.attribution {
-  display: none;
+  .attribution {
+    display: block;
+    position: absolute;
+    bottom: 0;
+  }
 }
